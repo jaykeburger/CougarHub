@@ -6,21 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class JakeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loginpage);
+        setContentView(R.layout.jakepage);
 
-        Button LoginButton = (Button) findViewById(R.id.loginbutton);
-        LoginButton.setOnClickListener(new View.OnClickListener() {
+        Button BackButton = (Button) findViewById(R.id.backtologinbutton);
+        BackButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                LoginSequence();
+                BackToLogin();
             }
         });
     }
-    public void LoginSequence() {
-        setContentView(R.layout.jakepage);
+    public void BackToLogin() {
+        setContentView(R.layout.loginpage);
     }
 }
