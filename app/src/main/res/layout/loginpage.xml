@@ -7,7 +7,7 @@
     android:background="#A70919">
 
     <TextView
-        android:id="@+id/PasswordTextView"
+        android:id="@+id/PasswordTextView2"
         android:layout_width="67dp"
         android:layout_height="19dp"
         android:layout_marginStart="172dp"
@@ -22,16 +22,17 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="506dp"
-        android:layout_height="360dp"
+        android:layout_width="454dp"
+        android:layout_height="314dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/universityofhouston"
-        tools:layout_editor_absoluteY="-13dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-28dp" />
 
     <TextView
-        android:id="@+id/Forgot_Password_Button"
+        android:id="@+id/Forgot_Password_Button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="138dp"
@@ -43,7 +44,7 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
@@ -57,10 +58,10 @@
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/Forgot_Password_Button"
+        app:layout_constraintBottom_toTopOf="@+id/Forgot_Password_Button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTextView2" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
@@ -72,7 +73,7 @@
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/PasswordTextView"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordTextView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CougarEmailTextView" />
@@ -93,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/WelcomeToCougarHubTextView"
+        android:id="@+id/WelcomeToCougarHubTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
@@ -106,7 +107,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -120,9 +121,17 @@
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeToCougarHubTextView"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeToCougarHubTextView2"
         app:srcCompat="@drawable/cougarpaw" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="666dp"
+        android:onClick="LoginSequence"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
