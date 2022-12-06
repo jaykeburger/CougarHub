@@ -127,11 +127,13 @@
 
     <Button
         android:id="@+id/loginbutton"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="LoginSequence"
         android:text="Login"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="666dp"
-        android:onClick="LoginSequence"/>
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="667dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
