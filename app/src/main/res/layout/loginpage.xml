@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/UniversityOfHouston"
+        app:srcCompat="@drawable/universityofhouston"
         tools:layout_editor_absoluteY="-13dp" />
 
     <TextView
@@ -123,6 +123,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WelcomeToCougarHubTextView"
-        app:srcCompat="@drawable/CougarPaw" />
+        app:srcCompat="@drawable/cougarpaw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
